@@ -5,6 +5,7 @@
  * @n: INteger params
  * Return: 0
  */
+
 void print_number(int n)
 {
 	unsigned int n1;
@@ -20,5 +21,4 @@ void print_number(int n)
 	print_number(n1 / 10);
 	}
 	_putchar((n1 % 10) + '0');
-	return (0);
 }
