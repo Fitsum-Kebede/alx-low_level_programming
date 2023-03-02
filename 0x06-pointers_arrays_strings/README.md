@@ -1,1 +1,1 @@
-0x06-pointers_arrays_strings task
+C - Pointers, Arrays and Strings - Part II
