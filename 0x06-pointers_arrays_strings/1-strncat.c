@@ -4,7 +4,7 @@
  * _strncat - a function that concatenates two strings
  * @dest:copy to
  * @src: copy from
- * @n: n
+ * @n: n.
  * Return: Always 0 (Success)
  */
 
