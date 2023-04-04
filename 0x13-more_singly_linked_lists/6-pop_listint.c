@@ -16,13 +16,13 @@ int pop_listint(listint_t **head)
 	if (*head == NULL)
 	return (0);
 
-	cur = *head;
-	first_node = cur->n;
+	temp = *head;
+	cur = temp->n;
 
-	first_node = cur->next;
+	first_node = temp->next;
 
-	free(cur);
+	free(temp);
 
-	*head = temp;
+	*head = cur;
 	return (first_node);
 }
