@@ -8,12 +8,12 @@
 
 void free_listint(listint_t *head)
 {
-	listint_t *po;
+	listint_t *p;
 
 	while (head != NULL)
 	{
-	po = head;
+	p = head;
 	head = head->next;
-	free(po);
+	free(p);
 	}
 }
