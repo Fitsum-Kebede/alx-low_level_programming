@@ -13,7 +13,7 @@ listint_t *find_listint_loop(listint_t *head)
 
 	p = head;
 	pre = head;
-	while (head && p && p2->next)
+	while (head && p && p->next)
 	{
 	head = head->next;
 	p = p->next->next;
