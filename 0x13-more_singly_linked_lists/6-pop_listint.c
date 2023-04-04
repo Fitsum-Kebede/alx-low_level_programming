@@ -2,27 +2,20 @@
 
 /**
  * pop_listint - deletes head of the node
- * @head: pointer to the first node
- * Return: n
+ * @head: pointer to the first node in the list
+ * Return: the head's node's data (n)
  */
-
 int pop_listint(listint_t **head)
 {
 	int first_node;
-
-	listint_t *temp;
-	listint_t *cur;
+	listint_t *temp, *next;
 
 	if (*head == NULL)
 	return (0);
-
 	temp = *head;
-	cur = temp->cur;
-
-	first_node = temp->cur;
-
+	next = temp->next;
+	first_node = temp->n;
 	free(temp);
-
-	*head = cur;
+	*head = next;
 	return (first_node);
 }
