@@ -5,6 +5,7 @@
  * append_text_to_file- apends text to file
  * @filename: path to a file
  * @text_content: content
+ * Return: 1 or -1
  */
 
 
