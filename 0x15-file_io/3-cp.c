@@ -5,6 +5,8 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <stdio.h>
+#include "main.h"
+
 /**
  * close_errchk - closes a file descriptor and prints
  * an error message if it fails
