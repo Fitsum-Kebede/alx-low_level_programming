@@ -87,14 +87,13 @@ int main(int argc, char *argv[])
 	free(buffer);
 	exit(99);
 	}
-	rr = read(from, buffer, 1024);
+	rr = read(f, buffer, 1024);
 	t = open(argv[2], O_WRONLY | O_APPEND);
 
-	} while (re > 0);
+	} while (rr > 0);
 
 	free(buffer);
 	close_file(f);
 	close_file(t);
 
-	return (0);
-}
+
