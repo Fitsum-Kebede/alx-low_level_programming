@@ -10,6 +10,8 @@
  * @argv: args
  * Return: Always 0.
  */
+#define READ_ERR "Error: can't read from file %s\n"
+#define WRITE_ERR "Error: can't write to %s\n"
 
 int main(int argc, char **argv)
 {
